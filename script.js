@@ -102,6 +102,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+    var hidden = document.querySelectorAll(".hidden");
+    hidden.forEach(element => {
+        element.addEventListener("mouseleave", function() {
+            if (element.style.visibility != hidden) {
+                var overlay = document.querySelectorAll(".eduoverlay");
+                overlay.forEach(school => {
+                    school.scrollTop = 0;
+                });
+            }
+        });
+    });
 });
 
 function addprojects() {
