@@ -113,6 +113,17 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+    var prjhidden = document.querySelectorAll(".prjhidden");
+    prjhidden.forEach(element => {
+        element.addEventListener("mouseleave", function() {
+            if (element.style.visibility != hidden) {
+                var overlay = document.querySelectorAll(".prjoverlay");
+                overlay.forEach(project => {
+                    project.scrollTop = 0;
+                });
+            }
+        });
+    });
 });
 
 function addprojects() {
