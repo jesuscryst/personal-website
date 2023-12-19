@@ -42,7 +42,7 @@ p, h1, h2, h3, h4, h5, h6, li {
 
 #abouttext {
     background-color: #091028;
-    border: #091028 solid;
+    box-shadow: 5px 5px 3px #091028;
 }
 
 #header, #footer {
@@ -94,7 +94,7 @@ p, h1, h2, h3, h4, h5, h6, li {
     height: auto;
     max-width: 100%;
     border-radius: 30px;
-    box-shadow: 7px 7px 5px 1px #091028;
+    box-shadow: 5px 5px 5px 1px #091028;
     display: block;
 }
 
@@ -206,7 +206,7 @@ h3, h4 {
 
 .prjcard {
     border-radius: 30px;
-    box-shadow: 7px 7px 5px 1px #091028;
+    box-shadow: 4px 4px 3px 1px #091028;
 }
 
 .prjcard:hover .prjoverlay {
