@@ -6,7 +6,7 @@ html, body {
 body {
     background-image: url(img/ncity.jpg);
     max-height: 90vh;
-    min-height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     background-position: center;
@@ -14,6 +14,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Andika !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .icon {
@@ -149,6 +155,7 @@ p, h1, h2, h3, h4, h5, h6, li {
 
 #content {
     z-index: 1;
+    height: 50vh;
 }
 
 #heading {
