@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 }
 
 #overlay {
-    height: 45vh;
+    height: 90vh;
     width: 100%;
     background-color: #091028;
     opacity: 85%;
