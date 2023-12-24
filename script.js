@@ -47,7 +47,7 @@ function switchActive(tabId) {
     // Show the selected tab and panel
     const selectedTab = document.getElementById(tabId);
     var parentdiv = selectedTab.closest("div").id;
-    var selectedPanel = document.getElementById(`${parentdiv}content`);
+    var selectedPanel = document.getElementById(`${parentdiv}`);
     selectedTab.setAttribute('aria-selected', 'true');
     selectedPanel.style.display = 'block';
 
