@@ -140,7 +140,7 @@ function addcard(project) {
             <img class="projectimg" src="${projects[project].imagesrc}" alt="projectimg" style="background-color: rgb(9, 9, 29, .50);">
             <div class="prjoverlay container" style="width: 100%; padding: 0; background-color: rgb(9, 9, 29, .85);">
                 <div class="prjtext container text-center" style="height: 100%; padding: 20px;">
-                    <h3 style="padding-bottom: 20px; padding-top: 10px;"><u>${project}</u></h3>
+                    <h3 style="padding-bottom: 20px; padding-top: 10px;">${project}</h3>
                     <div class="prjhidden">
                         <h4>${projects[project].location}</h4>
                         <p style="text-align: left;">${projects[project].description}</p>
