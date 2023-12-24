@@ -47,7 +47,7 @@ function switchActive(tabId) {
     // Show the selected tab and panel
     const selectedTab = document.getElementById(tabId);
     var parentdiv = selectedTab.closest("div").id;
-    var selectedPanel = document.getElementById(`${parentdiv}`);
+    var selectedPanel = document.getElementById(`${parentdiv}content`);
     selectedTab.setAttribute('aria-selected', 'true');
     selectedPanel.style.display = 'block';
 
@@ -57,7 +57,7 @@ function switchActive(tabId) {
             element.classList.remove("active");
 
             var parentid = element.closest("div").id;
-            var deactivatecontent = document.getElementById(`${parentid}`);
+            var deactivatecontent = document.getElementById(`${parentid}content`);
             deactivatecontent.classList.remove("show", "active");
         }
     });
