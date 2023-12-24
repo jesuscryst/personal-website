@@ -94,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function() {
             var project = button.closest("span").id;
             switch (type) {
                 case "gitrepo":
-                    window.location.href = projects[project].gitrepo;
+                    window.open(projects[project].gitrepo, '_blank');
                     break;
                 default:
-                    window.location.href = projects[project].link.url;
+                    window.open(projects[project].link.url, '_blank');
                     break;
             }
         });
@@ -200,16 +200,16 @@ function newcourses(school) {
 function redirect(id) {
     switch (id) {
         case "email":
-            window.location.href = "mailto:crystt8@uci.edu";
+            window.open("mailto:crystt8@uci.edu", '_blank');
             break;
         case "instagram":
-            window.location.href = "https://www.instagram.com/okcrys.ta/";
+            window.open("https://www.instagram.com/okcrys.ta/", '_blank');
             break;
         case "linkedin":
-            window.location.href = "https://www.linkedin.com/in/crystal-tran-20422526b/";
+            window.open("https://www.linkedin.com/in/crystal-tran-20422526b/", '_blank');
             break;
         case "github":
-            window.location.href = "https://github.com/jesuscryst";
+            window.open("https://github.com/jesuscryst", '_blank');
             break;
     }
 }
