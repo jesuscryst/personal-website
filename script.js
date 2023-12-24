@@ -57,7 +57,7 @@ function switchActive(tabId) {
             element.classList.remove("active");
 
             var parentid = element.closest("div").id;
-            var deactivatecontent = document.getElementById(`${parentid}content`);
+            var deactivatecontent = document.getElementById(`${parentid}`);
             deactivatecontent.classList.remove("show", "active");
         }
     });
