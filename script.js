@@ -206,7 +206,7 @@ function redirect(id) {
             window.open("https://www.instagram.com/okcrys.ta/", '_blank');
             break;
         case "linkedin":
-            window.open("https://www.linkedin.com/in/crystal-tran-20422526b/", '_blank');
+            window.open("https://linkedin.com/in/crystal-dc-tran-155360ct", '_blank');
             break;
         case "github":
             window.open("https://github.com/jesuscryst", '_blank');
