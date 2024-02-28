@@ -1,5 +1,17 @@
 
 var projects = {
+    "Slay n' Study": {
+        "imagesrc": "img/slime.png",
+        "location": "IrvineHacks 2023",
+        "description": "A fun and creative flashcard app that incorporates battling slimes into studying to foster a more engaging learning experience.",
+        "link": {
+            "type": "devpost",
+            "url": "https://devpost.com/software/slay-n-study"
+        },
+        "gitrepo": "https://github.com/jessed7/irvinehacks24",
+        "date": "March 2024"
+    },
+
     "Day Lilies": {
         "imagesrc": "img/sleepy.png",
         "location": "WebJam 2023",
@@ -27,7 +39,7 @@ var projects = {
 
 var coursework = {
     "uci": [
-        "Abstract Math", "Numerical Analysis", "Probability"
+        "Abstract Math", "Numerical Analysis", "Probability", "Real Analysis", "Linear Algebra", "Quantum Computing"
     ],
 
     "occ": [
@@ -167,15 +179,17 @@ function addcard(project) {
     newdiv.innerHTML = cardhtml;
     projectcards.appendChild(newdiv);
 
-    var linkbutton = document.getElementById(`${projects[project].link.type}`);
-    switch (linkbutton.id) {
-        case "site":
-            linkbutton.style.backgroundColor = '#979058';
-            break;
-        case "devpost":
-            linkbutton.style.backgroundColor = '#68909C';
-            break;
-    }
+    var linkbutton = document.querySelectorAll(`#${projects[project].link.type}`);
+    linkbutton.forEach(button => {
+        switch (button.id) {
+            case "site":
+                button.style.backgroundColor = '#979058';
+                break;
+            case "devpost":
+                button.style.backgroundColor = '#68909C';
+                break;
+        }
+    });
 }
 
 function addcoursework() {
