@@ -1,5 +1,17 @@
 
 var projects = {
+    "Heart Attack Prediction": {
+        "imagesrc": "img/heart.png",
+        "location": "Atlantis Datathon 2024",
+        "description": "An exploration and analysis of heart data to predict heart attack risk based on certain health factors to employ proper prevention measures.",
+        "link": {
+            "type": "devpost",
+            "url": "https://devpost.com/software/heart-attack-prevention"
+        },
+        "gitrepo": "https://github.com/jesuscryst/AtlantisDatathon2024",
+        "date": "April 2024"
+    },
+
     "Slay n' Study": {
         "imagesrc": "img/slime.png",
         "location": "IrvineHacks 2023",
