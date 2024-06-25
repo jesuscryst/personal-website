@@ -1,6 +1,18 @@
 
 var projects = {
-    "Heart Attack Prediction": {
+    "Mushroom Analysis": {
+        "imagesrc": "img/mushroom.png",
+        "location": "Data Science Project",
+        "description": "An look into mushroom characteristics to classify mushrooms as poisonous or edible and additional exploratory data analysis.",
+        "link": {
+            "type": "site",
+            "url": "https://bit.ly/analysis-of-mushroom-attributes"
+        },
+        "gitrepo": "https://github.com/jesuscryst/Intro-to-DS/blob/main/Final%20Project/mushroom_notebook.ipynb",
+        "date": "June 2024"
+    },
+
+    "Heart Attack Risk": {
         "imagesrc": "img/heart.png",
         "location": "Atlantis Datathon 2024",
         "description": "An exploration and analysis of heart data to predict heart attack risk based on certain health factors to employ proper prevention measures.",
